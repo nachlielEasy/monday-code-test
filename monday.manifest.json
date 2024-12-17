@@ -1,0 +1,27 @@
+{
+    "app_id": "monday-code-test",
+    "name": "Monday Code Test",
+    "description": "Monday Code Test",
+    "version": "1.0.0",
+    "icon": "public/icon.png",
+    "start_url": "/",
+    "entry": "/",      
+    "permissions": [
+      "boards:read",
+      "boards:write"
+    ],
+    "framework": {
+      "name": "next",
+      "version": "15.1.0"
+    },
+    "settings": {
+      "scope": "board",
+      "board_views": [
+        {
+          "type": "board_view",
+          "url": "/monday-app",
+          "initial_height": 500
+        }
+      ]
+    }
+  }
