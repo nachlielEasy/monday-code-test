@@ -3,26 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
-    "dev:node": "node server.js",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "start:node": "NODE_ENV=production node server.js",
-    "zip-node": "rm -f monday-app.zip && zip -r monday-app.zip .next/ public/ package.json monday.manifest.json next.config.ts server.js node_modules/",
-    "build-and-zip-node": "npm run build && npm run zip-node",
     "zip": "rm -f monday-app.zip && zip -r monday-app.zip .next/ public/ package.json monday.manifest.json next.config.ts node_modules/",
     "build-and-zip": "npm run build && npm run zip"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2",
+    "@mondaycom/apps-sdk": "^3.1.0",
+    "dotenv": "^16.4.7",
     "monday-sdk-js": "^0.5.0",
     "next": "15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    
     "@eslint/eslintrc": "^3",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",

@@ -1,4 +1,5 @@
 .env
 node_modules
 code.tar.gz
+.next
 monday-app.zip

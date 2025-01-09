@@ -27,6 +27,7 @@ const config: NextConfig = {
   },
 
   // Ensure proper handling of API routes
+  // ... existing code ...
   async headers() {
     return [
       {
@@ -43,8 +44,32 @@ const config: NextConfig = {
           },
         ],
       },
+      {
+        source: "/:path*",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: [
+              "connect-src 'self'",
+              "https://*.monday.com",
+              "https://monday.com",
+              "https://unpkg.com",
+              "wss://webpack.llama.fan:*",
+              "https://webpack.llama.fan:*",
+              "https://grsm.io",
+              "https://forms.hsforms.com",
+              "https://*.algolia.net",
+              "https://*.algolianet.com",
+              "https://bat.bing.com",
+              "https://*.braze.com",
+              "https://cookiehub.net",
+            ].join(" "),
+          },
+        ],
+      },
     ];
   },
+  // ... existing code ...
 };
 
 export default config;

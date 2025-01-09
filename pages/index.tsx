@@ -13,8 +13,8 @@ export default function Home() {
         <nav>
           <ul className={styles.buttonList}>
             <li>
-              <Link href="/" className={styles.button}>
-                HOME - HTML Page
+              <Link href="/test-route" className={styles.button}>
+                Test Route Page
               </Link>
             </li>
             <li>
