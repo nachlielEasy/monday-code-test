@@ -3,11 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useState } from "react";
 
-interface DemoPageProps {
-  // Add props if needed
-}
-
-const DemoPage: NextPage<DemoPageProps> = () => {
+const DemoPage: NextPage = () => {
   const [count, setCount] = useState(0);
 
   return (
